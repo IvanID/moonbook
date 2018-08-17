@@ -1,0 +1,248 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  font-family: -apple-system , BlinkMacSystemFont , "Segoe UI" , Roboto , "Segoe UI" , "Helvetica Neue", "PingFang SC", "Noto Sans" , "Noto Sans CJK SC" , "Microsoft YaHei" , "微软雅黑" , sans-serif; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  /* Older browser do not support empty content */
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.wrapper {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+h1, h2, h3 {
+  font-weight: 400; }
+
+.button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+  padding: 0.625rem 2rem;
+  color: #FFFFFF;
+  font-weight: 500;
+  line-height: 1.25rem;
+  font-size: 0.875rem; }
+
+.button_primary {
+  cursor: pointer;
+  background: #1679F0; }
+
+.button:hover {
+  background: #1160BF; }
+
+.button_primary:hover {
+  background: #1160BF; }
+
+button {
+  curosr: pointer; }
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: rgba(255, 255, 255, 0.4); }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: rgba(255, 255, 255, 0.4); }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: rgba(255, 255, 255, 0.4); }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: rgba(255, 255, 255, 0.4); }
+
+#top_header {
+  padding: 2em 0;
+  background: #FFFFFF;
+  text-align: center; }
+  #top_header .logo {
+    width: 76px;
+    float: left;
+    margin-top: 3px;
+    margin-left: 20px; }
+  #top_header .button {
+    float: right;
+    margin-right: 20px; }
+
+#banner {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 6.2rem 0; }
+  #banner #banner_content_wrapper {
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    jusify-content: center;
+    align-items: center; }
+    #banner #banner_content_wrapper #cover .feature_image {
+      width: 200px;
+      height: 290px;
+      border-radius: .5rem 0 0 .5rem;
+      box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.1); }
+      #banner #banner_content_wrapper #cover .feature_image .best_of_month {
+        border: none;
+        outline: none;
+        position: absolute;
+        background: #F82525;
+        color: #FFFFFF;
+        padding: .5rem 1rem .5rem 1rem;
+        left: 50%;
+        top: 50%;
+        margin: -40px 0 0 -40px; }
+    #banner #banner_content_wrapper #content {
+      float: left;
+      width: 26rem;
+      margin-left: 7.5rem; }
+      #banner #banner_content_wrapper #content .title {
+        margin: 0;
+        font-size: 2.25rem;
+        color: #FFFFFF;
+        line-height: 3.375rem; }
+      #banner #banner_content_wrapper #content .rating {
+        margin-top: 0.25rem; }
+        #banner #banner_content_wrapper #content .rating span {
+          color: #1679F0;
+          font-size: 1.25rem;
+          margin-right: 0.45rem; }
+        #banner #banner_content_wrapper #content .rating .inactive {
+          color: rgba(22, 121, 240, 0.3); }
+      #banner #banner_content_wrapper #content .author {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: .875rem;
+        margin-top: 1.2rem;
+        font-weight: 300; }
+      #banner #banner_content_wrapper #content .tag {
+        margin-top: 1.2rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: .875rem;
+        font-weight: 300; }
+      #banner #banner_content_wrapper #content .desicription {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: .875rem;
+        line-height: 1.875rem;
+        margin-top: 1rem;
+        font-weight: 300; }
+
+#banner::after {
+  position: absolute;
+  width: 100%;
+  height: 520px;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: url(../images/book1.jpg), linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay, normal;
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  transform: scale(1.1);
+  z-index: -10; }
+
+#books_of_month header {
+  height: 7.5rem; }
+  #books_of_month header h2 {
+    float: left;
+    margin-left: 20px;
+    font-size: 1.75;
+    font-weight: 500;
+    line-height: 7.5rem; }
+  #books_of_month header .view_more {
+    float: right;
+    margin-right: 20px;
+    color: #999999;
+    font-weight: 300;
+    line-height: 7.5rem; }
+
+#books_of_month .four_cover {
+  margin-left: -80px; }
+
+#books_of_month .row {
+  height: 428px;
+  float: left;
+  width: 25%;
+  padding-left: 100px;
+  box-sizing: border-box; }
+  #books_of_month .row .cover {
+    width: 200px;
+    height: 290px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.1); }
+    #books_of_month .row .cover img {
+      width: 100%;
+      height: 100%;
+      border-radius: .5rem 0 0 .5rem; }
+    #books_of_month .row .cover .title {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin: 1rem 0 0 0;
+      line-height: 1.875rem; }
+    #books_of_month .row .cover .author_small {
+      font-size: 0.875rem;
+      color: #999999;
+      line-height: 1.675rem;
+      margin: 0; }
+
+#subscribe {
+  padding: 5rem 0;
+  text-align: center;
+  background: #222222; }
+  #subscribe .subscribe_inner {
+    width: 504px;
+    margin: 0 auto; }
+  #subscribe h2 {
+    font-size: 1.75rem;
+    color: #FFFFFF; }
+  #subscribe p {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+    margin-top: 1rem; }
+  #subscribe .sign_up_form {
+    margin-top: 2rem; }
+    #subscribe .sign_up_form input[type="text"], #subscribe .sign_up_form input[type="email"] {
+      width: 42%;
+      margin: 2%;
+      height: 3rem;
+      border: none;
+      outline: none;
+      border-radius: 0.5rem 0 0 0.5rem;
+      background: #666666;
+      padding: 1rem 1.25rem;
+      font-size: 0.875rem;
+      color: #FFFFFF; }
+    #subscribe .sign_up_form .button_primary {
+      margin-top: 2rem;
+      width: 240px;
+      border: none;
+      outline: none;
+      padding: 1rem 2rem;
+      font-size: 0.875rem;
+      border-radius: 0.5rem 0 0 0.5rem;
+      font-weight: 500;
+      color: #FFFFFF; }
+
+footer {
+  background: #222222;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  footer p {
+    color: #666666;
+    font-weight: 300;
+    font-size: .875rem; }
